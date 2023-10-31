@@ -1,0 +1,97 @@
+:root {
+    --color-primary: #090;
+    --color-secundary: #ded;
+    --color-tertiary: #efe;
+    --color-button: #696;
+    --color-button-font: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font: 1em sans-serif;
+}
+
+/* DESCRIPTION */
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    margin: 20px 50px;
+}
+
+/* FORM */
+form {
+    margin: 0 auto;
+    width: 500px;
+
+    padding: 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+
+    background: var(--color-secundary);
+}
+  
+ul {
+    list-style: none;
+}
+  
+form li + li {
+    margin-top: 20px;
+}
+  
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+  
+input, textarea, button {
+    height: 30px;
+
+    border-radius: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+
+    background: var(--color-tertiary);
+    border: 1px solid var(--color-primary);
+}
+
+input {
+    width: 350px;
+}
+  
+textarea {
+    width: 100%;
+    height: 150px;
+    vertical-align: top;
+}
+
+button {
+    width: 100%;
+    padding: 0 10px;
+    border: 0;
+    background: var(--color-button);
+    color: var(--color-button-font);
+    transition: background .3s;
+}
+
+button:hover {
+    background: var(--color-primary);
+}
+
+/* FORM ERROR */
+.error {
+    font-size: 14.5px;
+    margin-top: 5px;
+    color: #900;
+}

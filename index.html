@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="description">
+        <h1>
+            ATIVIDADE - Validação de Formulário com JavaScript
+        </h1>
+        <p>
+            A atividade é seguir os passos do tutorial abaixo e criar este site com o formulário e com validação utilizando JavaScript.
+        </p>
+        <a href="https://www.freecodecamp.org/news/learn-javascript-form-validation-by-making-a-form/" target="_blank">
+            Learn JavaScript Form Validation
+        </a>
+    </div>
+
+    <form action="index.html" method="post" id="form">
+        <ul>
+            <li>
+                <label for="userName">
+                    Nome:
+                </label>
+                <input type="text" id="userName" name="userName" />
+                <div class="error"></div>
+            </li>
+            <li>
+                <label for="userEmail">
+                    Email:
+                </label>
+                <input type="email" id="userEmail" name="userEmail" />
+                <div class="error"></div>
+            </li>
+            <li>
+                <label for="userMsg">
+                    Mensagem:
+                </label>
+                <textarea id="userMsg" name="userMsg"></textarea>
+                <div class="error"></div>
+            </li>
+            <li>
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+            </li>
+        </ul>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
